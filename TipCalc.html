@@ -1,0 +1,12 @@
+let billTotal = 675;
+let partySize = 4;
+let tipPercentage = 20;
+
+function calcTip(total,party,tip){
+  let tipShare =total /party;
+  let personTip = tipShare * (tip/100);
+  console.log(`The total tip per person is ${personTip}`);
+  return `The total tip per person is : ${personTip}`;
+
+}
+calcTip(billTotal,partySize,tipPercentage);
